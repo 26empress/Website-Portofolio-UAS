@@ -9,7 +9,7 @@
     <script src="js/button.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.1/dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.1/dist/sweetalert2.min.css">
-
+  
 </head>
   <!-- Header -->
 <body onload="load()" class="bg-gray-100 font-sans leading-normal tracking-normal">
@@ -63,7 +63,7 @@
               <dd class="mt-1 text-sm text-gray-500">09031282126033@student.unsri<br>.ac.id</dd>
             </div>
             <div class="bg-gray-50 px-4 py-4 sm:px-6">
-              <a href="mailto:09031282126033@student.unsri.ac.id" class="block text-center w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Kirim Email</a>
+              <a role="button" onclick="kirim()" class="block text-center w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Kirim Email</a>
             </div>
           </div>
 
@@ -73,17 +73,17 @@
     <dd class="mt-1 text-sm text-gray-500">@hutrisemendawai_</dd>
   </div>
   <div class="bg-gray-50 px-4 py-4 sm:px-6 mt-auto">
-    <a role="button" onclick="gagal()" class="block text-center w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Kunjungi</a>
+    <a role="button" onclick="instagram()" class="block text-center w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Kunjungi</a>
   </div>
 </div>
 
           <div class="bg-white overflow-hidden shadow rounded-lg">
             <div class="px-4 py-5 sm:p-6">
-              <dt class="text-base font-medium text-gray-900">Facebook</dt>
+              <dt class="text-base font-medium text-gray-900">Twitter</dt>
               <dd class="mt-1 text-sm text-gray-500">Ahmad Hutri Semendawai</dd>
             </div>
             <div class="bg-gray-50 px-4 py-4 sm:px-6">
-              <a role="button" onclick="gagal()"  class="block text-center w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Kunjungi</a>
+              <a role="button" onclick="twitter()"  class="block text-center w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Kunjungi</a>
             </div>
           </div>
 
@@ -93,7 +93,7 @@
               <dd class="mt-1 text-sm text-gray-500">Ahmad Hutri Semendawai</dd>
             </div>
             <div class="bg-gray-50 px-4 py-4 sm:px-6">
-              <a role="button" onclick="gagal()"  class="block text-center w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Kunjungi</a>
+              <a role="button" onclick="linkedin()"  class="block text-center w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Kunjungi</a>
             </div>
           </div>
         </dl>

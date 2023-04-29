@@ -50,6 +50,12 @@
 </div>
 
   <!-- Isi -->
+
+<div class="bg-gray-100"> <br></div>
+<div style="display: flex; flex-wrap: wrap;">
+<img class="h-auto max-w-lg mx-auto rounded-lg shadow-xl dark:shadow-gray-800" src="img/IMG_0977.png" alt="Cousin and friends.">
+</div>
+<div class="bg-gray-100"> <br></div>
 <div class="bg-white shadow overflow-hidden sm:rounded-lg">
   <div class="px-4 py-5 sm:px-6">
     <h3 class="text-lg leading-6 font-medium text-gray-900">
@@ -109,6 +115,7 @@
   </div>
 </div>
 
+  
   <!-- footer -->
 <footer class="bg-gray-900 py-8">
   <div class="container mx-auto px-4 text-center">

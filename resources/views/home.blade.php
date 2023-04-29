@@ -9,6 +9,8 @@
     <script src="js/button.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.1/dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.1/dist/sweetalert2.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/slider1.js"></script>
 
 </head>
   <!-- Header -->
@@ -50,47 +52,28 @@
 </div>
 
   <!-- Isi -->
-<div class="container mx-auto px-4 py-8">
-  <div class="flex flex-wrap -mx-4">
-    <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div class="p-4">
-          <div class="text-lg font-bold mb-2">Tailwindcss vs Bootstrap</div>
-          <p class="text-gray-700 leading-relaxed">
-            Tailwind CSS dan Bootstrap tergantung pada kebutuhan dan preferensi Anda sebagai pengembang web. Jika Anda membutuhkan kerangka kerja front-end yang cepat dan mudah digunakan, maka Bootstrap mungkin menjadi pilihan yang lebih baik. Namun, jika Anda ingin fleksibilitas dan kontrol yang lebih besar dalam desain, maka Tailwind CSS bisa menjadi pilihan yang lebih baik.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div class="p-4">
-          <div class="text-lg font-bold mb-2">Mengapa Javascript?</div>
-          <p class="text-gray-700 leading-relaxed">
-            JavaScript didukung oleh semua browser modern, sehingga aplikasi web yang dibangun dengan JavaScript dapat diakses oleh pengguna di semua platform dan perangkat. Client-side scripting, JavaScript adalah bahasa pemrograman yang berjalan di sisi klien, artinya kode dijalankan di browser pengguna dan dapat merespons aksi pengguna seperti klik tombol atau input data di form.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div class="p-4">
-          <div class="text-lg font-bold mb-2">Sweetalert</div>
-          <p class="text-gray-700 leading-relaxed">
-            SweetAlert adalah sebuah library JavaScript yang digunakan untuk membuat modals atau dialog box yang lebih cantik dan interaktif. SweetAlert digunakan untuk memberikan pesan atau notifikasi pada pengguna dalam bentuk pop-up yang menarik. SweetAlert menawarkan beberapa fitur menarik seperti tampilan yang lebih interaktif, animasi yang halus, dan pilihan untuk menambahkan gambar atau ikon.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="bg-gray-100"> <br></div>
+<div style="display: flex; flex-wrap: wrap;">
+<img style="width: 30%; margin-right: 10px;" class="h-auto max-w-lg mx-auto rounded-lg shadow-xl dark:shadow-gray-800" src="img/IMG_1001.png" alt="Cousin and friends.">
+  <img style="width: 30%; margin-right: 10px;" class="h-auto max-w-lg mx-auto rounded-lg shadow-xl dark:shadow-gray-800" src="img/IMG_0996.png" alt="Me">
+  <img style="width: 30%;" class="h-auto max-w-lg mx-auto rounded-lg shadow-xl dark:shadow-gray-800" src="img/profile.png" alt="Cousin and friends.">
 </div>
+<div class="bg-gray-100"> <br></div>
 
 <!-- isi 2 -->
 <div class="bg-gray-200 py-16">
   <div class="container mx-auto px-4">
+    <h1 class="text-4xl text-black mb-4">Kirim Pesan</h1>
+    <p class="text-lg text-black leading-relaxed mb-8">Anda dapat mengirim pesan setelah mengisi form melalui tombol dibawah.</p>
+    <a role="button" onclick="kirim()" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-semibold py-2 px-4 rounded inline-block">Form</a>
+  </div>
+</div>
+  
+<div class="bg-gray-300 py-16">
+  <div class="container mx-auto px-4">
     <h1 class="text-4xl text-black mb-4">Fun Fact</h1>
-    <p class="text-lg text-black leading-relaxed mb-8">A group of flamingos is called a flamboyance.</p>
-    <a role="button" onclick="funfact()" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-semibold py-2 px-4 rounded inline-block">Answer</a>
+    <p class="text-lg text-black leading-relaxed mb-8">Tahukah anda? mengklik tombol di tengah halaman lebih menarik daripada melakukan navigasi melalui navbar.</p>
+    <a role="button" onclick="funfact()" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-semibold py-2 px-4 rounded inline-block">Jawab</a>
   </div>
 </div>
 

@@ -1,4 +1,6 @@
 let timerInterval
+const { value: email } = await
+const { value: formValues } = await
 
 function satu() {
 Swal.fire({
@@ -126,7 +128,7 @@ Toast.fire({
 
 function funfact(){
   Swal.fire({
-  title: 'A group of flamingos is called a flamboyance?',
+  title: 'Tombol ditengah halaman ini lebih responsif daripada tombol navigasi.',
   showDenyButton: true,
   confirmButtonText: 'True',
   denyButtonText: `False`,
@@ -141,7 +143,7 @@ function funfact(){
     Swal.fire({
   icon: 'error',
   title: 'Oops...',
-  text: 'Jawaban anda salah',
+  text: 'Silahkan mencoba!',
 })
   }
 })
@@ -180,3 +182,81 @@ function tamat() {
   })
 }
 
+function kirim() {
+Swal.fire({
+  title: 'Form Kirim Pesan',
+  html:
+    '<input id="swal-input1" class="swal2-input" placeholder="Masukkan email valid" type="email">' +
+    '<input id="swal-input2" class="swal2-input" style="height: 50px;" placeholder="Masukkan pesan"><br>',
+  focusConfirm: false,
+  preConfirm: () => {
+    const email = document.getElementById('swal-input1').value
+    const message = document.getElementById('swal-input2').value
+    
+    if (!email || !message) {
+      Swal.showValidationMessage('Tolong isi kedua kolom.')
+    } else if (!isValidEmail(email)) {
+      Swal.showValidationMessage('Tolong masukkan email yang valid')
+    } else {
+      return { email, message }
+    }
+  }
+}).then(result => {
+  if (result.value) {
+    const { email, message } = result.value
+    Swal.fire(`Pesan dengan : <br>Email: ${email}<br>Message: ${message}<br><br>Berhasil dikirim`)
+  }
+})
+
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
+
+}
+
+function instagram(){
+  Swal.fire({
+    title: 'Are you sure?',
+    text: "Anda akan membuka halaman baru!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Visit instagram'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.open("https://www.instagram.com/hutrisemendawai_/", "_blank");
+    }
+  });}
+
+function twitter(){
+  Swal.fire({
+    title: 'Are you sure?',
+    text: "Anda akan membuka halaman baru!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Visit twitter'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.open("https://twitter.com/urmealismissing", "_blank");
+    }
+  });
+}
+
+function linkedin(){
+  Swal.fire({
+    title: 'Are you sure?',
+    text: "Anda akan membuka halaman baru!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Visit linkedin'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.open("https://linkedin.com/in/ahmad-hutri-semendawai-562a43231", "_blank");
+    }
+  });
+}

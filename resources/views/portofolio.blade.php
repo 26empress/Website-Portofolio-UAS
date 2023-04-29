@@ -50,6 +50,7 @@
 </div>
 
   <!-- Isi -->
+
   <div class="bg-gray-200"> <br></div>
 <div class="text-lg">
   <div class="mx-auto text-center">Pendidikan formal adalah sebuah tahapan penting dalam hidup seseorang untuk mencapai kesuksesan di masa depan. Saya telah menempuh beberapa tahap pendidikan formal mulai dari <span class="text-green-600">Sekolah Islam Terpadu Izzuddin Palembang</span> pada tahun 2009 hingga 2015, <span class="text-green-600">Sekolah Menengah Pertama Katolik Frater Xaverius 1 Palembang</span> pada tahun 2015 hingga 2018, dan <span class="text-green-600">Sekolah Menengah Atas Xaverius 1 Palembang</span> pada tahun 2018 hingga 2021. Saat ini, saya sedang menempuh pendidikan di <span class="text-green-600">Universitas Sriwijaya</span> sejak tahun 2021. Meskipun status terakhir saya belum diketahui, saya tetap bersemangat dan optimis untuk mencapai tujuan akademik saya di masa depan.
